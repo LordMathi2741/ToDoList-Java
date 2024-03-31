@@ -1,20 +1,20 @@
 package Agregates;
 import Enums.ListType;
 
-public class List {
+public class Task {
 
     private ListType type;
-    private String task;
+    private String taskName;
 
-    public List(String s, ListType type) {
+    public Task(String s, ListType type) {
         this.type = type;
-        this.task = s;
+        this.taskName = s;
     }
 
 
     //crear setters
     public void setTask(String task) {
-        this.task = task;
+        this.taskName = task;
     }
 
     public void setType(ListType type) {
@@ -22,7 +22,7 @@ public class List {
     }
 
     public String getTask() {
-        return this.task;
+        return this.taskName;
     }
 
     public String getType() {
